@@ -35,6 +35,8 @@ p {
 /* Шапка */
 .navigation {
   border-bottom: 1px solid #ECECEC;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 /* Логотип */
@@ -126,6 +128,7 @@ margin-right: 50px;
 .hero {
   background-color: grey;
   text-align: center;
+  padding: 200px 0px;
 }
 .hero-title {
   margin: 0px auto 30px auto;
@@ -216,12 +219,14 @@ padding-bottom: 0px;
 .activity-list {
   list-style: none;
   display: flex;
-  justify-content: space-between;
 }
-
+.activity-item:not(:last-child) {
+margin-right: 30px;
+}
 .activity-image.no-gap {
   display: block;
 }
+
 /* Наша команда */
 .section.team {
   background-color: var(--secondary-background-color);
@@ -229,7 +234,7 @@ padding-bottom: 0px;
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+
 }
 .team-title {
   font-weight: 700;
@@ -246,7 +251,9 @@ padding-bottom: 0px;
 padding-bottom: 30px;
 background-color: #ffffff;
 border-radius: 0px 0px 4px 4px;
-
+}
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 .team-image {
   width: 270px;
